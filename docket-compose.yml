@@ -1,0 +1,20 @@
+
+services:
+   ollama:
+    container_name: ollama
+    image: ollama/ollama  # Substitua pela versão específica do Ollama, se necessário
+    ports:
+      - 11434:11434
+    deploy:
+      resources:
+        reservations:
+          devices:
+          - driver: nvidia
+            capabilities: ["gpu"]
+            count: all  # Ajuste a contagem para o número de GPUs que você deseja usar count: 1
+    volumes:
+      - ollama:/root/.ollama
+    restart: unless-stopped
+
+volumes:
+  ollama: 
