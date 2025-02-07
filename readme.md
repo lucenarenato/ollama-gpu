@@ -1,5 +1,11 @@
 # ollama/ollama
 
+```sh
+chmod +x install-docker-ollama.sh
+./install-docker-ollama.sh
+./install-docker-ollama.sh --gpu
+```
+
 ## docker: Error response from daemon: could not select device driver "" with capabilities: [[gpu]]. AFTER installing nvidia-docker2
 
 I have the same issue. I have noticed that, I did not installed 'NVIDIA Container Toolkit'. After installing the container toolkit, it works. The official instruction is available in : https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html
@@ -109,15 +115,20 @@ Run ext install your-publisher.deep-vscode
 
 Extension Can't Connect to Ollama:
 
-# Verify Ollama is running
+## Verify Ollama is running
 `ollama serve`
 
-# Check if model is installed
+## Check if model is installed
 `ollama list`
 
-# Pull model if not installed
+## Pull model if not installed
 `ollama pull deepseek-r1:1.5b`
+`ollama pull deepseek-v2`
 
 ## Use DeepSeek de Graça no VS Code (Testamos)
 
 Video: https://www.youtube.com/watch?v=WRQCFU8nLsY&ab_channel=C%C3%B3digoFonteTV
+
+## Ferramenta gratuita de IA para o VSCode (parecida com o Cursor AI) Cody
+- https://sourcegraph.com/docs/cody/clients/install-vscode
+- https://www.youtube.com/watch?v=fMGRnHEazTw&ab_channel=MaykBrito
