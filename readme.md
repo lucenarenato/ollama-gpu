@@ -1,5 +1,7 @@
 # ollama/ollama
 
+<p align="center"><a href="https://ollama.com/search?q=deepseek" target="_blank"><img src="270508355-080f3a72-e2fd-4741-8070-ae79a06f943f.svg" width="400" alt="ollama Logo"></a></p>
+
 ```sh
 chmod +x install-docker-ollama.sh
 ./install-docker-ollama.sh
@@ -132,3 +134,8 @@ Video: https://www.youtube.com/watch?v=WRQCFU8nLsY&ab_channel=C%C3%B3digoFonteTV
 ## Ferramenta gratuita de IA para o VSCode (parecida com o Cursor AI) Cody
 - https://sourcegraph.com/docs/cody/clients/install-vscode
 - https://www.youtube.com/watch?v=fMGRnHEazTw&ab_channel=MaykBrito
+
+
+# Renato Lucena
+
+<p align="center"><a href="https://ollama.com/search?q=deepseek" target="_blank"><img src="1_u66N5Z-2YLOSnnhcndIB4g.webp" width="400" alt="ollama Logo"></a></p>
