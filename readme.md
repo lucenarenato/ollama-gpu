@@ -117,3 +117,7 @@ Extension Can't Connect to Ollama:
 
 # Pull model if not installed
 `ollama pull deepseek-r1:1.5b`
+
+## Use DeepSeek de Graça no VS Code (Testamos)
+
+Video: https://www.youtube.com/watch?v=WRQCFU8nLsY&ab_channel=C%C3%B3digoFonteTV
