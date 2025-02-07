@@ -60,9 +60,9 @@ docker run -d --name ollama -p 11434:11434 -v ollama_storage:/root/.ollama \
 
 ## II . Running Ollama & WebUI with docker compose
   ```sh
-  git clone https://github.com/ollama-webui/ollama-webui
-cd ollama-webui
-docker compose up -d
+    git clone https://github.com/ollama-webui/ollama-webui
+    cd ollama-webui
+    docker compose up -d
 ```
 
 ## GPU Support (Optional)
@@ -83,36 +83,37 @@ sudo systemctl restart docker
 docker run --gpus all nvidia/cuda:11.5.2-base-ubuntu20.04 nvidia-smi
 ```
 
-Prerequisites
+## Prerequisites
 Before using this extension, you need to:
 
-Install Ollama
+## Install Ollama
 
-macOS/Linux:
-curl -fsSL https://ollama.com/install.sh | sh
+## macOS/Linux:
+`curl -fsSL https://ollama.com/install.sh | sh`
 
 Windows: Download from Ollama's official website
 Pull the DeepSeek model:
 
-ollama pull deepseek-r1:1.5b
+`ollama pull deepseek-r1:1.5b`
 
-Quick Start
+## Quick Start
 Install the Extension
 
 Open VS Code
 Press Ctrl+P / Cmd+P
 Run ext install your-publisher.deep-vscode
-Start Ollama
 
-ollama serve
+## Start Ollama
+
+`ollama serve`
 
 Extension Can't Connect to Ollama:
 
 # Verify Ollama is running
-ollama serve
+`ollama serve`
 
 # Check if model is installed
-ollama list
+`ollama list`
 
 # Pull model if not installed
-ollama pull deepseek-r1:1.5b
+`ollama pull deepseek-r1:1.5b`
