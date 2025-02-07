@@ -136,6 +136,6 @@ Video: https://www.youtube.com/watch?v=WRQCFU8nLsY&ab_channel=C%C3%B3digoFonteTV
 - https://www.youtube.com/watch?v=fMGRnHEazTw&ab_channel=MaykBrito
 
 
-# Renato Lucena
+# Renato Lucena: https://www.youtube.com/watch?v=ZgXhBw5FXRY&ab_channel=cpdrenato
 
 <p align="center"><a href="https://ollama.com/search?q=deepseek" target="_blank"><img src="1_u66N5Z-2YLOSnnhcndIB4g.webp" width="400" alt="ollama Logo"></a></p>
