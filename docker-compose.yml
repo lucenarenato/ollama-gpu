@@ -10,6 +10,8 @@ services:
       - NVIDIA_VISIBLE_DEVICES=all
     deploy:
       resources:
+        limits:
+          cpus: '3.0'
         reservations:
           devices:
           - driver: nvidia
