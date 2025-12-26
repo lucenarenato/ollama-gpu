@@ -6,6 +6,8 @@ services:
     image: ollama/ollama  # Substitua pela versão específica do Ollama, se necessário
     ports:
       - 11434:11434
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
     deploy:
       resources:
         reservations:
@@ -15,7 +17,7 @@ services:
             count: all  # Ajuste a contagem para o número de GPUs que você deseja usar count: 1
     volumes:
       - ollama:/root/.ollama
-    restart: unless-stopped
+    restart: always
 
 volumes:
   ollama: 

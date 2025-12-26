@@ -2,7 +2,35 @@
 
 <p align="center"><a href="https://ollama.com/search?q=deepseek" target="_blank"><img src="270508355-080f3a72-e2fd-4741-8070-ae79a06f943f.svg" width="400" alt="ollama Logo"></a></p>
 
+## O Ollama não precisa ser “ajustado no docker-compose” para usar o DeepSeek.
+## Quem decide qual modelo roda é o Ollama, não o Docker.
+
+> O que você precisa é baixar e rodar o modelo DeepSeek dentro do container.
+
+## ✅ Seu docker-compose está OK para DeepSeek
+
+> Seu compose já suporta GPU, porta correta e volume persistente:
+> Porta: 11434 ✅
+> Volume persistente: /root/.ollama ✅
+> GPU NVIDIA: ✅
+
+
 ```sh
+docker info | grep -i nvidia
+docker run --rm --gpus all nvidia/cuda:12.2.0-base nvidia-smi
+
+chmod +x install.sh setup-install.sh 
+sudo ./install.sh 
+sudo ./setup-install.sh 
+
+## Baixe o DeepSeek no Ollama
+## Entre no container:
+docker exec -it ollama ollama pull deepseek-r1:1.5b
+docker exec -it ollama ollama pull qwen2.5-coder:1.5b
+
+# Teste o modelo
+docker exec -it ollama ollama run deepseek-r1:1.5b
+
 chmod +x install-docker-ollama.sh
 ./install-docker-ollama.sh
 ./install-docker-ollama.sh --gpu
